@@ -1,0 +1,24 @@
+{
+  "author": "Fernando Braz <fb@gamekaiju.monster> (https://gamekaiju.monster/)",
+  "description": "Template to publish a Node.js library to NPM.",
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1"
+  },
+  "keywords": [
+    "library",
+    "publish",
+    "npm"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "nodejs-publishable-library",
+  "scripts": {
+    "check:lint": "pnpm exec eslint . && pnpm exec prettier . --check",
+    "lint": "pnpm exec eslint . --fix && pnpm exec prettier . --write"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}
